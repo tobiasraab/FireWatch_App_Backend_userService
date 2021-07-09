@@ -15,6 +15,12 @@ const mailPassword = process.env.MAIL_PASSWORD.toString()
 // MAIL_SERVICE
 const mailService = process.env.MAIL_SERVICE.toString()
 
+// SERVER_ADDRESS
+const serverAddress = process.env.SERVER_ADDRESS.toString()
+
+// USER_SERVICE_PORT
+const port = process.env.USER_SERVICE_PORT
+
 //-------------------------------------------------------------------------------------modules
 // mongodb
 const MongoClient = require('mongodb').MongoClient
@@ -29,8 +35,6 @@ let ObjectId = require('mongodb').ObjectId
 // express
 const express = require('express')
 const app = express()
-const port = process.env.USER_SERVICE_PORT
-const serverAddress = process.env.SERVER_ADDRESS
 // uuid
 const {
     v4: uuidv4
