@@ -1,0 +1,31 @@
+{
+  "name": "firewatch_app_backend_userservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobiasraab/FireWatch_App_Backend_userService.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tobiasraab/FireWatch_App_Backend_userService/issues"
+  },
+  "homepage": "https://github.com/tobiasraab/FireWatch_App_Backend_userService#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jquery": "^3.6.0",
+    "mongodb": "^3.6.9",
+    "nodemailer": "^6.6.2",
+    "socket.io": "^4.1.2",
+    "uuid": "^8.3.2"
+  }
+}
