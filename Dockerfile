@@ -16,7 +16,7 @@ RUN npm install
 COPY . .
 
 # Network / reverse proxy config
-LABEL traefik.http.routers.helloapi.rule="Host(`helloapi.ds.ava.hfg.design`)"
+LABEL traefik.http.routers.firewatch_userservice.rule="Host(`firewatch_userservice.ds.ava.hfg.design`)"
 
 EXPOSE 3000
 CMD [ "node", "userService.js" ]
