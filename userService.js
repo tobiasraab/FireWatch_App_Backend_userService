@@ -7,7 +7,7 @@ if (process.env.NODE_ENV == 'production') {
 const dbUri = process.env.DB_URI.toString()
 
 // MAIL_ADDRESS
-const mailAdress = process.env.MAIL_ADDRESS.toString()
+const mailAddress = process.env.MAIL_ADDRESS.toString()
 
 // MAIL_PASSWORD
 const mailPassword = process.env.MAIL_PASSWORD.toString()
@@ -185,15 +185,15 @@ app.post('/api/register', (req, res) => {
 
                                     // send TestCode via E-Mail
                                     let transporter = nodemailer.createTransport({
-                                        service: process.env.mailService,
+                                        service: mailService,
                                         auth: {
-                                          user: process.env.mailAdress,
-                                          pass: process.env.mailPassword
+                                          user: mailAddress,
+                                          pass: mailPassword
                                         }
                                       });
                                       
                                       let mailOptions = {
-                                        from: process.env.mailAdress,
+                                        from: mailAddress,
                                         to: dbres.email,
                                         subject: 'Fire Watch Registration',
                                         html: '<h1>Welcome to FireWatch!</h1><br><h3>Use our free forest codes: </h3><br><span style="font-weight: 400">testCode1, testCode2</span>'
