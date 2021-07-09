@@ -4,16 +4,16 @@ if (process.env.NODE_ENV == 'production') {
 }
 
 // DB_URI => Mongo DB Database Uri
-const dbUri = process.env.DB_URI
+const dbUri = process.env.DB_URI.toString()
 
 // MAIL_ADDRESS
-const mailAdress = process.env.MAIL_ADDRESS
+const mailAdress = process.env.MAIL_ADDRESS.toString()
 
 // MAIL_PASSWORD
-const mailPassword = process.env.MAIL_PASSWORD
+const mailPassword = process.env.MAIL_PASSWORD.toString()
 
 // MAIL_SERVICE
-const mailService = process.env.MAIL_SERVICE
+const mailService = process.env.MAIL_SERVICE.toString()
 
 //-------------------------------------------------------------------------------------modules
 // mongodb
